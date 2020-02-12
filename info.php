@@ -1,4 +1,4 @@
 <?php
     phpinfo();
-    echo "programmer b ini perubahan";
+    echo "ini perubahan programmer a";
 ?>
