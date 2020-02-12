@@ -1,4 +1,4 @@
 <?php
     phpinfo();
-    echo "testting bae cuy";
+    echo "programmer b ini perubahan";
 ?>
