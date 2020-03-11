@@ -35,13 +35,7 @@ $router->options('/user', function () use ($router) {
 });
 
 //contoh route parameter required
-$router->get('/user/{id}/{name}/{nim}', function ($id,$a,$b) {
-    $c = $a+$b;
-    return 'get user dengan id '.$id.' hasil tambah '.$c;
-});
+$router->get('/user/{id}/{name}/{nim}', 'UserController@index');
 
 //contoh optional parameter
-
-$router->get('/mahasiswa/{nim}[/{name}]', function ($nim, $name = 'saya') {
-    return 'nim : '.$nim.' name: '.$name;
-});
+$router->get('/mahasiswa/{nim}[/{name}]', 'UserController@test');
