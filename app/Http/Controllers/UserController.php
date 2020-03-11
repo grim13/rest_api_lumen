@@ -16,6 +16,6 @@ class UserController extends Controller
     }
 
     public function test($nim, $name = 'saya') {
-        return 'nim : '.$nim.' name: '.$name;
+        return 'nim : '.$nim.' namesdddd: '.$name;
     }
 }
