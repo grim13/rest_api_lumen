@@ -39,3 +39,9 @@ $router->get('/user/{id}/{name}/{nim}', function ($id,$a,$b) {
     $c = $a+$b;
     return 'get user dengan id '.$id.' hasil tambah '.$c;
 });
+
+//contoh optional parameter
+
+$router->get('/mahasiswa/{nim}[/{name}]', function ($nim, $name = 'saya') {
+    return 'nim : '.$nim.' name: '.$name;
+});
